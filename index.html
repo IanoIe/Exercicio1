@@ -4,24 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, PHP, JS, ANGULAR">
-    <link rel="stylesheet" href="style.css">
-    <title>EXERCISE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title> EXERCISE 1 </title>
 </head>
 <body>
-    <!-- 
-    1. Créer un fichier profil.html et ajouter la structure suivante :
-    2. Une <div> qui servira de conteneur principal.
-    3. Un <h1> contenant votre prénom et votre nom.
-    4. Un <h3> pour indiquer votre profession ou domaine d’étude.
-    5. Un <p> dans lequel vous écrivez une brève présentation de vous-même
+    <!-- 1. Créer un fichier profil.html et ajouter la structure suivante :
+         2. Une <div> qui servira de conteneur principal.
+         3. Un <h1> contenant votre prénom et votre nom.
+         4. Un <h3> pour indiquer votre profession ou domaine d’étude.
+         5. Un <p> dans lequel vous écrivez une brève présentation de vous-même
     -->
     <div class="container">
-        <h1> AURELIANO JOÃO </h1>
-        <h3> MAÇON PIERREUX </h3>
+        <h1 class="nom-perfil"> AURELIANO JOÃO </h1>
+        <img class="image-perfil" src="./images/profil.jpeg" alt="image d´Aureliano">
+        <h3> FOOTBALLEUR </h3>
         <p>Bonjour, je m´appelle CA. J´habite dans 91 avec ma famille.
            Je parle le portugais, le français et comprends un peu de l´anglais et spagnol.
            J´aime beacoup faire du sport, sortout du footbal.
         </p>
     </div>
+    
+    <!-- Tableau -->
+    <table class="my-table">
+        <thead>
+            <tr>
+                <th> Nom </th>
+                <th> Prenom </th>
+                <th> Nationalité </th>
+                <th> Ville </th>
+                <th> Tel </th>
+                <th> Couleur</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+               <td> CA </td>
+               <td> João </td>
+               <td> Espagnol </td>
+               <td> Paris </td>
+               <td> 013978234 </td>
+               <td> Blue </td>
+            </tr>
+            <tr>
+                <td> Silva </td>
+                <td> Jhon </td>
+                <td> Itilien</td>
+                <td> Lyon </td>
+                <td> 013678234 </td>
+                <td> Marron</td>
+             </tr>
+             <tr>
+                <td> Louis </td>
+                <td> Orange </td>
+                <td> Chinois </td>
+                <td> Lille </td>
+                <td> 013629234 </td>
+                <td> Vert </td>
+             </tr>
+        </tbody>
+    </table>
+    
 </body>
 </html>
