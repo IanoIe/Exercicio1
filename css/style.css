@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(205, 205, 184);
+    background-color: rgb(243, 243, 238);
 } 
 
 
 /* HEADER */
-
 .navbar {
     background-color: blue;
     padding: 15px 0;
@@ -54,36 +55,32 @@ body {
 
     .nav-list li {
         margin: 10px 0;
-        border-bottom: 2px solid white;
+        border-bottom: px solid white;
+        cursor: pointer;
     }
 }
 
 /* ZONE Principale */
-.principale {
+.container {
     width: 100%;
     height: 100%;
-    border: 1px solid #c3c3c3;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.principale .container {
-    width: 60%;
-    height: 200px;
     margin: auto;
     background-color: rgb(222, 235, 204);
     border-radius: 3px;
-    padding-bottom: 10px 25px;
+    padding-bottom: 25px 25px;
     box-shadow: 0 20px 20px 0;
 }
 
-.nom-perfil {
+h1 {
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
     margin-top: 2rem;
     color:chocolate;
     font-size: 24px;
 }
 
-.nom-perfil, h3, p {
+h3 {
     text-align: center;
     font-weight: bold;
 }
@@ -97,6 +94,7 @@ p {
     color: black;
     font-size: 18px;
     padding: 10px 40px;
+    justify-items: auto;
 }
 
 /* Definition de la Table */
@@ -105,7 +103,7 @@ table {
     margin-right: auto;
     margin-top: 35px;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -135,78 +133,39 @@ tr:hover {
 
 
 /* Listes*/
-.web ul {
-    border-radius: 20px;
-    justify-content: center;
-    margin: auto;
-    list-style: none;
-    margin-top: 20px;
-    
-}
-
-.web ul, li {
-    height: 2%;
-    width: 200px;
-    border-bottom: 1px solid red;
-}
-
-.web li {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 15px;
-}
 
 li:hover {
-    background-color: #99c4dc;
+    background-color: #e9eaeb;
     border-radius: 12px;
 }
-/*
+
 ul li:nth-child(2) {
     color: blue;
 }
-/* Il va changer la couleur à partir du primier element dans list 
+/* Il va changer la couleur à partir du primier element dans list */
 ul li:nth-child(n+3) {
     color: orange;
 }
 /* Il va changer la couleur à partir du quatrieme element dans list */
-/*
+
 ul li:nth-child(n+4) {
     color: yellow;
 }
-
-
 
 ul li:nth-child(n+5) {
     color: rgb(248, 24, 24);
 }
 
-ul li:nth-child(n+6) {
-    color: violet;
-}
-/*
-ul li:nth-child(even){
-    background-color: black;
-}
-*/
-/*
-ul li:nth-child(add){
-    background-color: green;
-}
-*/
-/* Le trois elements vont etre en bold*/
-/*
-ul li:nth-child(-n+3){
-    font-weight: bold;
-}
-
-*/
 
 /* FOOTER */
 footer {
+    position: fixed;
     margin: 0;
-    padding: 2rem;
+    bottom: 0;
     width: 100%;
-    height: 2px;
+    height: 5rem;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: blue;
+    text-align: center;
 }
+   
